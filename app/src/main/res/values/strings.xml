@@ -4,4 +4,7 @@
     <string name="two_players">2 Players</string>
     <string name="three_players">3 Players</string>
     <string name="four_players">4 Players</string>
+    <string name="life_counter1">40</string>
+    <string name="life_counter2">40</string>
+    <string name="horizontal_line">Line</string>
 </resources>
