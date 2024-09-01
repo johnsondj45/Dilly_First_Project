@@ -5,20 +5,6 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/button1"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:background="@android:color/holo_blue_dark"
-        android:gravity="center"
-        android:text="@string/life_counter1"
-        android:textSize="50sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/horizontal_line"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
         android:id="@+id/button2"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -41,4 +27,103 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@android:color/holo_blue_dark"
+        android:rotation="180"
+        app:layout_constraintBottom_toTopOf="@+id/horizontal_line"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/imageButtonUp1"
+            android:layout_width="63dp"
+            android:layout_height="65dp"
+            android:background="@android:color/holo_blue_dark"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/Player2Health"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@android:drawable/arrow_up_float" />
+
+        <ImageButton
+            android:id="@+id/imageButtonDown1"
+            android:layout_width="63dp"
+            android:layout_height="65dp"
+            android:background="@android:color/holo_blue_dark"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/Player2Health"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@android:drawable/arrow_down_float" />
+
+        <TextView
+            android:id="@+id/Player2Health"
+            android:layout_width="110dp"
+            android:layout_height="71dp"
+            android:gravity="center"
+            android:text="@string/life_counter2"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@android:color/holo_red_dark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontal_line">
+
+        <ImageButton
+            android:id="@+id/imageButtonUp2"
+            android:layout_width="63dp"
+            android:layout_height="65dp"
+            android:background="@android:color/holo_red_dark"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/Player1Health"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@android:drawable/arrow_up_float" />
+
+        <ImageButton
+            android:id="@+id/imageButtonDown2"
+            android:layout_width="63dp"
+            android:layout_height="65dp"
+            android:background="@android:color/holo_red_dark"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/Player1Health"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@android:drawable/arrow_down_float" />
+
+        <TextView
+            android:id="@+id/Player1Health"
+            android:layout_width="110dp"
+            android:layout_height="71dp"
+            android:gravity="center"
+            android:text="@string/life_counter2"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
