@@ -5,7 +5,7 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/button2"
+        android:id="@+id/button_two"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@android:color/holo_red_dark"
@@ -39,31 +39,31 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageButton
-            android:id="@+id/imageButtonUp1"
+            android:id="@+id/plyr_two_lwr_btn"
             android:layout_width="63dp"
             android:layout_height="65dp"
             android:background="@android:color/holo_blue_dark"
             android:scaleType="fitCenter"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/Player2Health"
+            app:layout_constraintStart_toEndOf="@+id/plyr_two_hth_txt"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@android:drawable/arrow_up_float" />
 
         <ImageButton
-            android:id="@+id/imageButtonDown1"
+            android:id="@+id/plyr_two_hgr_btn"
             android:layout_width="63dp"
             android:layout_height="65dp"
             android:background="@android:color/holo_blue_dark"
             android:scaleType="fitCenter"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/Player2Health"
+            app:layout_constraintEnd_toStartOf="@+id/plyr_two_hth_txt"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@android:drawable/arrow_down_float" />
 
         <TextView
-            android:id="@+id/Player2Health"
+            android:id="@+id/plyr_two_hth_txt"
             android:layout_width="110dp"
             android:layout_height="71dp"
             android:gravity="center"
@@ -88,31 +88,31 @@
         app:layout_constraintTop_toBottomOf="@+id/horizontal_line">
 
         <ImageButton
-            android:id="@+id/imageButtonUp2"
+            android:id="@+id/plyr_one_hgr_btn"
             android:layout_width="63dp"
             android:layout_height="65dp"
             android:background="@android:color/holo_red_dark"
             android:scaleType="fitCenter"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/Player1Health"
+            app:layout_constraintEnd_toStartOf="@+id/plyr_one_hth_txt"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@android:drawable/arrow_up_float" />
 
         <ImageButton
-            android:id="@+id/imageButtonDown2"
+            android:id="@+id/plyr_one_lwr_btn"
             android:layout_width="63dp"
             android:layout_height="65dp"
             android:background="@android:color/holo_red_dark"
             android:scaleType="fitCenter"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/Player1Health"
+            app:layout_constraintStart_toEndOf="@+id/plyr_one_hth_txt"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@android:drawable/arrow_down_float" />
 
         <TextView
-            android:id="@+id/Player1Health"
+            android:id="@+id/plyr_one_hth_txt"
             android:layout_width="110dp"
             android:layout_height="71dp"
             android:gravity="center"
