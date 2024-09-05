@@ -2,27 +2,38 @@ package com.example.dillysfirstproject.activities
 
 import android.app.Activity
 import android.os.Bundle
-import android.view.View
 import android.widget.TextView
-import com.example.dillysfirstproject.databinding.TwoPlayersBinding
+import com.example.dillysfirstproject.databinding.ThreePlayersBinding
 
-class TwoPlayerActivity : Activity() {
-    private lateinit var binding: TwoPlayersBinding
+class ThreePlayerActivity : Activity() {
+    private lateinit var binding: ThreePlayersBinding
     private var playertwohealth: Int = 40
     private var playeronehealth: Int = 40
+    private var playerthreehealth: Int = 40
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = TwoPlayersBinding.inflate(layoutInflater)
+        binding = ThreePlayersBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         binding.apply {
+            plyrThreeLwrBtn.setOnClickListener {
+                //Player Three = Green
+                playerthreehealth--
+                healthDown(playerthreehealth, binding.plyrThreeHthTxt)
+            }
             plyrTwoLwrBtn.setOnClickListener {
+                //Player Two = Blue
                 playertwohealth--
                 healthDown(playertwohealth, binding.plyrTwoHthTxt)
             }
             plyrOneLwrBtn.setOnClickListener {
+                //Player One = Red
                 playeronehealth--
                 healthDown(playeronehealth, binding.plyrOneHthTxt)
+            }
+            plyrThreeHgrBtn.setOnClickListener {
+                playerthreehealth++
+                healthUp(playerthreehealth, binding.plyrThreeHthTxt)
             }
 
             plyrTwoHgrBtn.setOnClickListener {
@@ -34,6 +45,8 @@ class TwoPlayerActivity : Activity() {
                 healthUp(playeronehealth, binding.plyrOneHthTxt)
             }
         }
+
+
     }
 
     private fun healthDown(health: Int, healthToChange: TextView) {
@@ -42,7 +55,5 @@ class TwoPlayerActivity : Activity() {
 
     private fun healthUp(health: Int, healthToChange: TextView) {
         healthToChange.text = health.toString()
-
     }
-
 }

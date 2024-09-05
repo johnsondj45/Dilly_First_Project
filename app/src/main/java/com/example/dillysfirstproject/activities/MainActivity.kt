@@ -13,14 +13,14 @@ class MainActivity : Activity() {
         binding = MainActivityBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
+
         binding.button1.setOnClickListener {
             val intent = Intent(this, TwoPlayerActivity::class.java)
             startActivity(intent)
         }
+        binding.button2.setOnClickListener {
+            val intent = Intent(this, ThreePlayerActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
-
-
-
-
-

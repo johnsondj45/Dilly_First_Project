@@ -18,7 +18,6 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@android:color/holo_blue_dark"
-        android:rotation="180"
         app:layout_constraintBottom_toTopOf="@+id/horizontal_line"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -31,10 +30,9 @@
             android:background="@drawable/minus"
             android:scaleType="fitCenter"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/plyr_two_hth_txt"
-            app:layout_constraintTop_toTopOf="parent"
-            />
+            app:layout_constraintEnd_toStartOf="@+id/plyr_two_hth_txt"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <ImageButton
             android:id="@+id/plyr_two_hgr_btn"
@@ -43,10 +41,9 @@
             android:background="@drawable/plus"
             android:scaleType="fitCenter"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/plyr_two_hth_txt"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-             />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/plyr_two_hth_txt"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/plyr_two_hth_txt"
@@ -56,6 +53,7 @@
             android:text="@string/life_counter2"
             android:textSize="50sp"
             android:textStyle="bold"
+            android:rotation="180"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
