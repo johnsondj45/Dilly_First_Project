@@ -28,11 +28,10 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/player_one"
+        android:id="@+id/player_two"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@android:color/holo_blue_dark"
-        android:rotation="180"
         app:layout_constraintBottom_toTopOf="@+id/horizontal_divider"
         app:layout_constraintEnd_toStartOf="@id/vertical_divider"
         app:layout_constraintHorizontal_bias="0.0"
@@ -41,126 +40,127 @@
         app:layout_constraintVertical_bias="0.0">
 
         <TextView
-            android:id="@+id/player_one_health"
+            android:id="@+id/plyrTwoHthTxt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:rotation="180"
+            android:text="@string/life_counter2"
             android:textColor="@android:color/black"
-            android:textSize="25sp"
+            android:textSize="40sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:text="40" />
-
-        <ImageButton
-            android:id="@+id/player_one_add_health_btn"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:background="@android:color/holo_blue_dark"
-            android:scaleType="fitCenter"
-            android:src="@android:drawable/arrow_down_float"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/player_one_health"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageButton
-            android:id="@+id/player_one_subtract_health_btn"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
+            android:id="@+id/plyrTwoLwrBtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:background="@android:color/holo_blue_dark"
             android:scaleType="fitCenter"
-            android:src="@android:drawable/arrow_up_float"
+            android:src="@drawable/minus"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/plyrTwoHthTxt"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/plyrTwoHgrBtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@android:color/holo_blue_dark"
+            android:scaleType="fitCenter"
+            android:src="@drawable/plus"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@id/player_one_health"
+            app:layout_constraintStart_toEndOf="@id/plyrTwoHthTxt"
             app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/player_two"
+        android:id="@+id/player_three"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@android:color/holo_green_dark"
-        android:rotation="180"
         app:layout_constraintBottom_toTopOf="@+id/horizontal_divider"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/vertical_divider"
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/player_two_health"
+            android:id="@+id/plyrThreeHthTxt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:rotation="180"
+            android:text="@string/life_counter3"
             android:textColor="@android:color/black"
-            android:textSize="25sp"
+            android:textSize="40sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:text="40" />
-
-        <ImageButton
-            android:id="@+id/player_two_add_health_btn"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:background="@android:color/holo_green_dark"
-            android:scaleType="fitCenter"
-            android:src="@android:drawable/arrow_down_float"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/player_two_health"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageButton
-            android:id="@+id/player_two_subtract_health_btn"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
+            android:id="@+id/plyrThreeLwrBtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:background="@android:color/holo_green_dark"
             android:scaleType="fitCenter"
-            android:src="@android:drawable/arrow_up_float"
+            android:src="@drawable/minus"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/plyrThreeHthTxt"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/plyrThreeHgrBtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@android:color/holo_green_dark"
+            android:scaleType="fitCenter"
+            android:src="@drawable/plus"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@id/player_two_health"
+            app:layout_constraintStart_toEndOf="@id/plyrThreeHthTxt"
             app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
-        android:id="@+id/player_three_health"
+        android:id="@+id/plyrOneHthTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="@string/life_counter1"
         android:textColor="@android:color/black"
-        android:textSize="25sp"
+        android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/horizontal_divider"
-        tools:text="40" />
-
-    <ImageButton
-        android:id="@+id/player_three_add_health_btn"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:background="@android:color/holo_red_dark"
-        android:scaleType="fitCenter"
-        android:src="@android:drawable/arrow_down_float"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/player_three_health"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/horizontal_divider" />
 
     <ImageButton
-        android:id="@+id/player_three_subtract_health_btn"
+        android:id="@+id/plyrOneHgrBtn"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:background="@android:color/holo_red_dark"
         android:scaleType="fitCenter"
-        android:src="@android:drawable/arrow_up_float"
+        android:src="@drawable/plus"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/plyrOneHthTxt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/horizontal_divider" />
+
+    <ImageButton
+        android:id="@+id/plyrOneLwrBtn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@android:color/holo_red_dark"
+        android:scaleType="fitCenter"
+        android:src="@drawable/minus"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/player_three_health"
+        app:layout_constraintStart_toEndOf="@id/plyrOneHthTxt"
         app:layout_constraintTop_toBottomOf="@id/horizontal_divider" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
