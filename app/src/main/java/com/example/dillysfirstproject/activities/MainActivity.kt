@@ -22,5 +22,9 @@ class MainActivity : Activity() {
             val intent = Intent(this, ThreePlayerActivity::class.java)
             startActivity(intent)
         }
+        binding.button3.setOnClickListener {
+            val intent = Intent(this, FourPlayerActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

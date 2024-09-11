@@ -167,7 +167,7 @@
             android:scaleType="fitCenter"
             android:src="@drawable/minus"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEnd="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@id/plyrOneHthTxt"
             app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
