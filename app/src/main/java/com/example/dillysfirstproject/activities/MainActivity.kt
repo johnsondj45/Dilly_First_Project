@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
         binding = MainActivityBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
-        observelivedata()
+        observeLiveData()
 
         binding.button1.setOnCheckedChangeListener { chip, isChecked ->
             viewModel.switchCheckBox()
@@ -34,7 +34,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun observelivedata() {
+    private fun observeLiveData() {
         val button1Observer = Observer<Boolean> { isChecked ->
             if (isChecked) {
                 binding.button2.visibility = View.GONE
